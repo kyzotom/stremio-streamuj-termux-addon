@@ -17,6 +17,6 @@ npm install -g localtunnel
 
 # Spustenie tunela
 echo "🚀 Spúšťam localtunnel na porte 7000..."
-lt --port 7000 --subdomain streamujtest --no-open
+npx localtunnel --port 7000 --subdomain streamujtest --no-open
 
 
