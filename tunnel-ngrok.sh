@@ -1,12 +1,14 @@
-
 #!/data/data/com.termux/files/usr/bin/bash
 
-echo "⬇️ Inštalujem ngrok pre Termux..."
+echo "⬇️ Inštalujem ngrok pre Termux (64-bit ARM)..."
 
 pkg install -y wget unzip
 
-# Stiahni ngrok binárku
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip -O ngrok.zip
+# Zmažeme starú verziu
+rm -f ngrok ngrok.zip
+
+# Stiahneme 64-bit ARM verziu
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.zip -O ngrok.zip
 
 unzip -o ngrok.zip
 chmod +x ngrok
